@@ -23,6 +23,7 @@ const QuoteForm = ({onSearch}:Props) => {
      placeholder="Enter a topic (e.g motivation, success, etc.)"
      value={topic}
      onChange={(e)=>setTopic(e.target.value)}
+     className="text-black font-semibold placeholder:text-black"
      />
      <Button type="submit">Get Quote</Button>
       </form>

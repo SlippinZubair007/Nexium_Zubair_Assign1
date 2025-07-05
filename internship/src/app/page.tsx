@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import QuoteForm from '@/components/QuoteForm'
-import { Quote } from 'lucide-react';
 import QuoteList from '@/components/QuoteList';
 
 const quotes = [
@@ -21,13 +20,22 @@ const page = () => {
      .filter((q)=>q.topic===topic)
      .slice(0, 1) // Limit to 5 quotes
      .map((q)=>q.text);
-     setFilteredQuotes(result);
+     setFilteredQuotes(result); 
   }
   return (
-    <div>
-      <QuoteForm onSearch={handleSearch}/>
+ <main className="flex flex-col min-h-screen justify-between items-between px-6 py-12 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-black text-foreground">
+  <section>
+  <div className="w-full max-w-xl bg-slate-800 text-card-foreground border border-border rounded-xl shadow-xl backdrop-blur-md p-8">
+    <h1 className="text-3xl font-semibold text-center mb-6 tracking-wide text-primary-foreground">
+      AI Quote Generator
+    </h1>
+    <QuoteForm onSearch={handleSearch} />
+    <div className="mt-8">
       <QuoteList quotes={filteredQuotes} />
     </div>
+  </div>
+  </section>
+</main>
   )
 }
 
