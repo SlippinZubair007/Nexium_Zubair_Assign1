@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="bg-base-100 p-4 shadow-md flex justify-start gap-2 items-center">
+    <header className="bg-black p-4 shadow-md flex justify-start gap-2 items-center">
       <div className="p-2 rounded-full bg-primary animate-pulse">   
         <Link href="/" className="text-primary-content">
           <ZapIcon className="text-primary-content"/> 
