@@ -25,20 +25,24 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-black text-foreground">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#000000] via-[#220a0a] to-black text-foreground">
       <section className="flex-grow py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-50 items-center">
+
+            
             {/* Left: Text and form */}
             <div className="space-y-10">
-              <h1 className="text-5xl font-bold tracking-tight text-blue-400">
-                <span className="text-blue-600">Quotify</span>
-                <span className="text-slate-300">.io</span>
+              <div className="absolute top-40 left-5 w-40 h-40 border-l-2 border-t-2" />
+
+              <h1 className="text-4xl font-semibold text-white">
+                <span style={{fontFamily:"Michroma,sans-serif"}} className="text-8xl">Future</span>
+                <span style={{fontFamily:"Michroma,sans-serif"}} className="text-gray-600"> Is in your Hands</span>
               </h1>
 
-              <div className="w-full bg-slate-800 text-card-foreground border border-border rounded-xl shadow-xl backdrop-blur-md p-8">
+              <div className="top-2 w-full bg-slate-800 text-card-foreground border border-border rounded-xl shadow-xl backdrop-blur-md p-8">
                 <h2 className="text-3xl font-semibold text-center mb-6 tracking-wide text-primary-foreground">
-                  AI Quote Generator
+                  Quote Generator
                 </h2>
                 <QuoteForm onSearch={handleSearch} />
                 <div className="mt-8">
