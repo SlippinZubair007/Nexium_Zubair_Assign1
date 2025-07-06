@@ -74,14 +74,14 @@ const Page = () => {
               </div>
 
                {/* Decorative border */}
-              <div className="w-180 top-5 h-1 bg-primary mr-4 rounded-full" />
+              <div className="w-180 top-5 h-1 bg-gray-800 mr-4 rounded-full" />
 
-              <div className="w-full bg-black-800 text-card border border-gray-700 rounded-xl shadow-xl backdrop-blur-md p-8">
-                <h2 className="text-3xl font-semibold text-center mb-6 tracking-wide text-primary-foreground">
+              <div className="w-full bg-black-800 text-card border border-gray-700 rounded-3xl shadow-xl backdrop-blur-md p-8">
+                <h2 className="text-3xl font-semibold text-center mb-6 tracking-wide text-white">
                   Quote Generator
                 </h2>
                 <QuoteForm onSearch={handleSearch} />
-                <div className="mt-8">
+                <div className="mt-8 ">
                   <QuoteList quotes={filteredQuotes} />
                 </div>
               </div>
