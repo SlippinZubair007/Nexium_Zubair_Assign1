@@ -108,7 +108,7 @@ const Page = () => {
           </div>
 
           {/* Right: Superman illustration */}
-          <div className="flex justify-center items-center order-1 lg:order-2">
+          <div className="flex justify-center items-center order-2 lg:order-2">
             <div className="w-full max-w-md lg:max-w-lg">
               <Superman />
             </div>
