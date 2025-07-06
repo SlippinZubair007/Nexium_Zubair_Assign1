@@ -12,7 +12,7 @@ const QuoteForm = ({onSearch}:Props) => {
 
   const [topic,setTopic] = useState<string>("")
   return (
-    <div>
+    <div >
     <form
     onSubmit={(e)=>{
         e.preventDefault();
@@ -23,11 +23,11 @@ const QuoteForm = ({onSearch}:Props) => {
      placeholder="Enter a topic (e.g motivation, success, etc.)"
      value={topic}
      onChange={(e)=>setTopic(e.target.value)}
-     className="text-black font-semibold placeholder:text-black"
+     className="text-white font-semibold placeholder:text-gray-400 border border-gray-600"
      />
-     <Button type="submit">Get Quote</Button>
+     <Button className="mt-5 bg-red-950 text-gray-100 " type="submit">Get Quote</Button>
       </form>
-    </div>  
+    </div>
   )
 }
 

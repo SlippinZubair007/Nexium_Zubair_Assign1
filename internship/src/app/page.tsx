@@ -35,7 +35,7 @@ const Page = () => {
             <div className="space-y-10">
 
             {/* Text */}
-            <div className="flex flex-wrap">
+            <div className="pt-20 flex flex-wrap">
             {/* Decorative border */}
               <div className="w-1 h-24 bg-primary mr-4 rounded-full" />
               <h1 className="text-4xl font-semibold text-white ">
@@ -44,7 +44,7 @@ const Page = () => {
               </h1>
               </div>
 
-              <div className="top-2 w-full bg-slate-800 text-card-foreground border border-border rounded-xl shadow-xl backdrop-blur-md p-8">
+              <div className="w-full bg-black-800 text-card border border-gray-700 rounded-xl shadow-xl backdrop-blur-md p-8">
                 <h2 className="text-3xl font-semibold text-center mb-6 tracking-wide text-primary-foreground">
                   Quote Generator
                 </h2>
