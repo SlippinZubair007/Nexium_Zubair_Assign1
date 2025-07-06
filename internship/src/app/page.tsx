@@ -69,10 +69,10 @@ const Page = () => {
             
             {/* Hero Text */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold leading-tight">
                 <span 
                   style={{ fontFamily: "Michroma, sans-serif" }} 
-                  className="block text-primary animate-pulse"
+                  className="block text-white animate-pulse"
                 >
                   Future
                 </span>
