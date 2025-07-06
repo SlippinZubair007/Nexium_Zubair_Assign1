@@ -1,7 +1,7 @@
 'use client'
 
 import { ZapIcon } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 const Navbar = () => {
