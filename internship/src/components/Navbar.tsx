@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="fixed bg-base-100 p-4 w-full shadow-md flex justify-start gap-2 items-center">
+    <header className="sticky  bg-black p-4 w-full shadow-md flex justify-start gap-2 items-center">
       <div className="p-2 rounded-full bg-primary animate-pulse">   
         <Link href="/" className="text-primary-content">
           <ZapIcon className="text-primary-content"/> 
