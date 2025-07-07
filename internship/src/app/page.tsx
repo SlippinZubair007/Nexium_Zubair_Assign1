@@ -237,7 +237,7 @@ const Page = () => {
             
             {/* Hero Text */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span 
                   style={{ fontFamily: "Michroma, sans-serif" }} 
                   className="block text-white animate-pulse"
@@ -276,15 +276,21 @@ const Page = () => {
                   </div>
                 )}
                 
-                {filteredQuotes.length > 0 && (
+               {filteredQuotes.length > 0 && (
                   <div className="mt-8 space-y-4">
                     <div className="divider text-base-content/60">Generated Quotes</div>
                     <QuoteList quotes={filteredQuotes} />
                   </div>
                 )}
+                 {filteredQuotes.length === 0 && (
+                  <div className="mt-8 space-y-4">
+                    <div className="divider text-base-content/60">Select Quotes from available topics</div>
+                  </div>
+                )}
               </div>
             </div>
-                           {/* STATS */}
+
+          {/* STATS */}
               <div className="flex items-center gap-10 py-6 font-mono">
                 <div className="flex flex-col">
                   <div className="text-2xl text-primary">500+</div>
