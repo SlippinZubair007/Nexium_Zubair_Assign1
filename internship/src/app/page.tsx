@@ -74,7 +74,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-base-300 via-base-200 to-base-100 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-zinc-950 to-red-950 overflow-hidden relative">
       
       {/* Desktop Only - Futuristic Floating Topic Boxes */}
       <div className="hidden xl:block fixed inset-0 pointer-events-none z-10">
@@ -229,7 +229,7 @@ const Page = () => {
         </div>
       </div>
 
-      <main className="container mx-auto px-4 py-8 lg:py-16">
+      <main className="container mx-auto px-4 py-2 lg:py-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* Left: Hero text and form */}
@@ -257,7 +257,7 @@ const Page = () => {
             </div>
 
             {/* Quote Generator Card */}
-            <div className="card bg-base-100 shadow-2xl border border-base-300/50 backdrop-blur-sm">
+            <div className="card bg-gray-900 shadow-2xl border border-base-300/50 backdrop-blur-sm">
               <div className="card-body p-6 md:p-8">
                 <h2 className="card-title text-2xl md:text-3xl font-semibold justify-center mb-6 text-base-content">
                   Quote Generator
@@ -284,6 +284,23 @@ const Page = () => {
                 )}
               </div>
             </div>
+                           {/* STATS */}
+              <div className="flex items-center gap-10 py-6 font-mono">
+                <div className="flex flex-col">
+                  <div className="text-2xl text-primary">500+</div>
+                  <div className="text-xs uppercase tracking-wider">ACTIVE USERS</div>
+                </div>
+                <div className="h-12 w-px bg-gradient-to-b from-gray-500 via-gray-500 to-gray-500"></div>
+                <div className="flex flex-col">
+                  <div className="text-2xl text-primary">20+</div>
+                  <div className="text-xs uppercase tracking-wider">QUOTES</div>
+                </div>
+                <div className="h-12 w-px bg-gradient-to-b from-gray-500 via-gray-500 to-gray-500"></div>
+                <div className="flex flex-col">
+                  <div className="text-2xl text-primary">100%</div>
+                  <div className="text-xs uppercase tracking-wider">SATISFACTION</div>
+                </div>
+              </div>
           </div>
 
           {/* Right: Superman illustration */}

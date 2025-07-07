@@ -11,7 +11,7 @@ const QuoteList = ({quotes}:QuoteListProps) => {
   return (
     <ul className="space-y-2 mt-4">
         {quotes.map((quote, idx) => (
-         <li key={idx} className="p-4 text-gray-300 bg-gray-900 rounded-md shadow-sm">
+         <li key={idx} className="p-4 text-gray-300 bg-slate-950 rounded-md shadow-sm">
             <p className="text-white-500">{quote}</p>  
             </li>  
         ))}

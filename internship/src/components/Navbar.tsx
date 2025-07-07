@@ -6,14 +6,13 @@ import Link from 'next/link'
 
 const Navbar = () => {
 
-
+{/* Navbar that is a constant */}
   return (
-    <header className="sticky  bg-black p-4 w-full shadow-md flex justify-start gap-2 items-center">
-      <div className="p-2 rounded-full bg-primary animate-pulse">   
+    <header className="sticky top-0 left-0 w-full z-50 bg-black backdrop-blur-md border-b border-white/10">
+      <div className="container mx-auto flex flex-wrap items-center justify-start gap-2 p-4">  
         <Link href="/" className="text-primary-content">
           <ZapIcon className="text-primary-content"/> 
         </Link>
-      </div>
       <h1 className="text-3xl tracking-wider">
         <Link href="/" className="text-base-content">
           <span style={{ fontFamily: "Poppins,sans-serif" }} className="text-base-content">
@@ -21,9 +20,9 @@ const Navbar = () => {
           </span>
         </Link>
       </h1>
+       </div>
 
     </header>
   )
 }
-
 export default Navbar
